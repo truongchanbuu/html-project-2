@@ -8,4 +8,82 @@ html {
 
 body {
     font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Common */
+.content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+.heading {
+    position: sticky;
+    background: #FFFCF4;
+    margin-top: 28px;
+    padding: 8px 0 8px;
+    top: 0;
+}
+
+.heading .navbar {
+    display: flex;
+    align-items: center;
+}
+
+.heading .features-bar {
+    display: flex;
+    margin-left: auto;
+    margin-right: 49px;
+}
+
+.features-bar a {
+    position: relative;
+    padding: 8px 21px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    text-align: center;
+    color: #5F5B53;
+}
+
+.features-bar a.active, .features-bar a:hover {
+    text-shadow: 1px 0 0 currentColor;
+    color: #171100;
+}
+
+a.active::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: 6px;
+    left: 21px;
+    width: 12px;
+    height: 2px;
+    background: #171100;
+    border-radius: 1px;
+}
+
+.heading .action .btn {
+    padding: 16px 42px;
+    background: #171100;
+    border-radius: 24.5px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.hero {
+
 }
